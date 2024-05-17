@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prima guerra mondiale</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <style>
+        * {box-sizing: border-box}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+        
+        body {
+            background-image: url('sfondo3.jpg');
+            background-size: cover;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #222;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar li {
+            flex: 1;
+        }
+
+        .navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover {
+            background-color: #575757;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .center-text {
+            text-align: center;
+            font-size: 24px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .content-box {
+            background-color: rgba(51, 51, 51, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .text {
+            color: #f2f2f2;
+            font-size: 20px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+
+        @media only screen and (max-width: 300px) {
+            .prev, .next,.text {font-size: 11px}
+        }
+
+        .scroll-container {
+            background-color: #333;
+            overflow: auto;
+            white-space: nowrap;
+            padding: 10px;
+            margin: 20px auto;
+            max-width: 1000px;
+            border-radius: 10px;
+        }
+
+        .scroll-container img {
+            padding: 10px;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+
+        .scroll-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Scroll Indicator Styles */
+        .scroll-indicator-container {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f1f1f1;
+        }
+
+        .scroll-indicator {
+            height: 7px;
+            background-color: #333;
+            width: 0%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="pagina1.html">LLa Prima Guerra Mondiale</a></li>
+            <li><a href="pagina2.html">Leggende metropolitane</a></li>
+            <li><a href="pagina3.html">Film</a></li>
+            <li><a href="pagina4.html">Fonti</a></li>
+        </ul>
+    </nav>
+
+    <div class="center-text">
+        <h2>La Prima Guerra Mondiale</h2>
+    </div>
+    <div class="content-box">
+        <p>La Prima Guerra Mondiale, conosciuta anche come Grande Guerra, fu un conflitto globale che ebbe luogo dal 28 luglio 1914 all'11 novembre 1918. Fu uno degli eventi più devastanti del XX secolo e coinvolse molte delle grandi potenze mondiali, che si organizzarono in due principali alleanze: le Potenze Centrali, guidate dalla Germania e dall'Austria-Ungheria, e gli Alleati, guidati da Francia, Regno Unito, Russia e successivamente gli Stati Uniti.</p>
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img6.jpg" style="width:100%">
+            <div class="text">L'Italia entra in guerra</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img5.jpg" style="width:100%">
+            <div class="text">Guerra di trincea</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img7.jpeg" style="width:100%">
+            <div class="text">La fine della guerra</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)"><</a>
+        <a class="next" onclick="plusSlides(1)">></a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+    <div class="content-box">
+        <h2 class="center-text">Cause della Guerra</h2>
+        <p>
+            Le cause della Prima Guerra Mondiale sono molteplici e complesse. Tra le principali:<br><br>
+            1. Nazionalismo: L'intenso sentimento nazionalista in molti paesi europei portò a rivalità e tensioni tra le nazioni.<br><br>
+            2. Imperialismo: La competizione per il controllo delle colonie e delle risorse globali aumentò le tensioni tra le potenze europee.<br><br>
+            3. Militarismo: La corsa agli armamenti e la glorificazione della guerra contribuirono a preparare il terreno per il conflitto.<br><br>
+            4. Alleanze: L'intricata rete di alleanze difensive tra i vari stati europei garantì che un conflitto locale si trasformasse rapidamente in una guerra mondiale.<br><br>
+            5. L'assassinio di Francesco Ferdinando: L'arciduca d'Austria fu assassinato il 28 giugno 1914 a Sarajevo da Gavrilo Princip, un nazionalista serbo. Questo evento scatenò una serie di dichiarazioni di guerra.<br><br>
+        </p>
+    </div>
+
+    <div class="content-box">
+        <h2 class="center-text">Principali fasi della Guerra</h2>
+        <p>
+            1. 1914: La guerra iniziò con l'invasione della Serbia da parte dell'Austria-Ungheria, seguita dall'invasione della Francia da parte della Germania attraverso il Belgio. Questo portò alla famosa battaglia della Marna<br><br>
+            2. 1915-1916: La guerra di trincea divenne il simbolo della guerra sul fronte occidentale. Battaglie sanguinose come quelle di Verdun e della Somme videro milioni di morti senza significativi avanzamenti territoriali.<br><br>
+            3. 1917: Gli Stati Uniti entrarono in guerra a fianco degli Alleati, portando nuove risorse e truppe fresche. La Russia, dopo la Rivoluzione di Ottobre, firmò il Trattato di Brest-Litovsk e si ritirò dal conflitto<br><br>
+            4. 1918: Gli Alleati lanciarono una serie di offensive che portarono al collasso delle linee tedesche. L'11 novembre 1918, la Germania firmò l'armistizio, ponendo fine ai combattimenti.<br><br>
+        </p>
+    </div>
+
+    <div class="content-box">
+        <h2 class="center-text">Conseguenze della Guerra</h2>
+        <p>
+            1. Perdite umane: La guerra causò la morte di circa 10 milioni di soldati e milioni di civili, oltre a feriti e mutilati.<br><br>
+            2. Trattato di Versailles: Firmato nel 1919, il trattato impose severe sanzioni alla Germania, ridisegnò le frontiere europee e creò la Società delle Nazioni, un'organizzazione internazionale mirata a prevenire future guerre.<br><br>
+            3. Cambiamenti geopolitici: L'impero Austro-Ungarico, l'Impero Ottomano e l'Impero Russo crollarono, portando alla creazione di nuovi stati nazionali.<br><br>
+            4. Conseguenze economiche: La guerra devastò le economie europee, portando a una lunga crisi economica e a condizioni che contribuirono all'ascesa del fascismo e del nazismo.<br><br>
+        </p>
+    </div>
+
+    <div class="scroll-container">
+        <img src="img10.jpg" alt="Cinque Terre" width="600" height="400">
+        <img src="img11.jpg" alt="Forest" width="600" height="400">
+        <img src="img12.jpg" alt="Northern Lights" width="600" height="400">
+        <img src="img13.jpg" alt="Mountains" width="600" height="400">
+    </div>
+
+    <!-- Scroll Indicator Container -->
+    <div class="scroll-indicator-container">
+        <div class="scroll-indicator" id="scrollIndicator"></div>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+
+        window.onscroll = function() {updateScrollIndicator()};
+
+        function updateScrollIndicator() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("scrollIndicator").style.width = scrolled + "%";
+        }
+		
+
+    </script>
+</body>
+</html>
